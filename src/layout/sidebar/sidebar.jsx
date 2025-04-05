@@ -11,6 +11,7 @@ const Sidebar = () => { // <-- Change to uppercase 'Sidebar'
 
   const [isDashboardOpen, setDashboardOpen] = useState(false);
   const [isCompanyManagementOpen, setCompanyManagementOpen] = useState(false);
+  const [isEnqiryOpen, setEnqiryOpen] = useState(false);
 
   const toggleDashboard = () => {
     setDashboardOpen(!isDashboardOpen);
@@ -18,6 +19,10 @@ const Sidebar = () => { // <-- Change to uppercase 'Sidebar'
 
   const toggleCompanyManagement = () => {
     setCompanyManagementOpen(!isCompanyManagementOpen);
+  };
+
+  const toggleEnquiry = () => {
+    setEnqiryOpen(!isEnqiryOpen);
   };
 
 
@@ -87,6 +92,26 @@ const Sidebar = () => { // <-- Change to uppercase 'Sidebar'
                     <li>
                       <Link to="/company">
                         <span className="sub-item">Product list</span>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </li>
+
+            
+            <li className={`nav-item ${isActive('enquiry') ? 'active' : ''}`}>
+              <a onClick={toggleEnquiry} className={`collapsed ${isEnqiryOpen ? 'show' : ''}`}>
+                <i className="fas fa-layer-group"></i>
+                <p>Enquiry</p>
+                <span className="caret"></span>
+              </a>
+              { (isEnqiryOpen || (isActive('enquiry'))) && (
+                <div className="collapse show">
+                  <ul className="nav nav-collapse">
+                    <li>
+                      <Link to="/enquiry">
+                        <span className="sub-item">Enquiry</span>
                       </Link>
                     </li>
                   </ul>

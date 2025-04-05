@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { BrowserRouter, Navigate, Outlet, Route, Routes } from 'react-router-dom'
+import React from 'react'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import AppLayout from '../layout/applayout/applayout'
 import Home from '../pages/Home'
 import About from '../pages/About'
@@ -11,6 +11,8 @@ import BranchesForm from '../pages/company_management/BranchesForm'
 //product
 import ProductCategories from '../pages/product/ProductCategories'
 import EditProduct from '../pages/product/EditProduct'
+import Enquiry from '../pages/Enquiry/Enquiry'
+
 
 //Inventory Management
 import PackageComponent from '../pages/inventory_management/package_management/PackageComponent'
@@ -57,7 +59,7 @@ const AppRoutes = () => {
                 <Route path='/productCategories'  element={<ProductCategories />} />
                 <Route path='/edit-product/:id' element={<EditProduct />}/>
 
-
+                <Route path='/enquiry'  element={<Enquiry />}/>
 
                 <Route path='/addcompany' element={<AddCompany/>}/>
                 <Route path='/editcompany/:index' element={<AddCompany/>}/>

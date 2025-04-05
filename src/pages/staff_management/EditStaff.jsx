@@ -37,7 +37,6 @@ const EditStaff = () => {
     formState: { errors },} = useForm();
 
     const [selectedDepartment, setSelectedDepartment] = useState(null);
-
     const [staffData, setStaffData] = useState({
         first_name: '',
         last_name: '',
@@ -211,27 +210,6 @@ const EditStaff = () => {
                                 />
                                 {errors.password && <p className="text-danger">{errors.password.message}</p>}
                             </div>
-
-                            {/* <div className="col-md-4">
-                                <SingleSelect
-                                    {...register('role')}
-                                    label="Role"
-                                    options={[
-                                        { value: 1, label: "Account Manager" },
-                                        { value: 2, label: "Sales Associate" },
-                                        { value: 3, label: "Admin" },
-                                        { value: 4, label: "Tell Caller" },
-                                        { value: 5, label: "Relationship Manager" },
-                                    ]}
-                                    selectedValue={selectRoles}
-                                    // setSelectedValue={setSelectRoles} 
-                                    setSelectedValue={(value) => {
-                                        setSelectRoles(value);
-                                        setValue("role", value);
-                                    }}
-                                />
-                                {errors.role && <p className="text-danger">{errors.role.message}</p>}
-                            </div> */}
                         </div>
 
 
@@ -334,13 +312,7 @@ const EditStaff = () => {
                                 {errors.postal_code && <p className="text-danger">{errors.postal_code.message}</p>}
                             </div>
                         </div>
-
-                        {/* <div className="row">
-                            <div className="col-md-12">
-                                <Summernote 
-                                />
-                            </div>
-                        </div> */}
+                        
                         <div className="row">
                             <div className="col-md-12">
                                 <InputBox
