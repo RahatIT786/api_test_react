@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.40df3699.css",
+    "main.js": "/static/js/main.6cf07767.js",
+    "static/js/453.29314506.chunk.js": "/static/js/453.29314506.chunk.js",
+    "static/media/rahat_logo.png": "/static/media/rahat_logo.a848d563ddfb49a16059.png",
+    "index.html": "/index.html",
+    "main.40df3699.css.map": "/static/css/main.40df3699.css.map",
+    "main.6cf07767.js.map": "/static/js/main.6cf07767.js.map",
+    "453.29314506.chunk.js.map": "/static/js/453.29314506.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40df3699.css",
+    "static/js/main.6cf07767.js"
+  ]
+}
